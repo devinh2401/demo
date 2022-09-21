@@ -1,0 +1,147 @@
+body{
+  width: 1600px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto';
+  box-sizing: border-box;
+  background-color:ffff;
+  color: #333; 
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  width: 1600px;
+  height: 150px;
+  background-color: #ffff;
+  box-sizing: border-box;
+}
+.header_top--panel{
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  height: 28px;
+  background-color: #dfe6e9
+  ;
+}
+/* .header__top--panel-left{
+  width: 60%;
+} */
+.header__top--panel-right{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 18px;
+  padding-right: 20px;
+}
+.top--panel-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+}
+.top--panel-list-items{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-right:  15px;
+}
+.header_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.logo{
+  width: 270px;
+  height: 70px;
+  
+}
+.logo img{
+
+  max-width: 270px;
+  max-height: 70px;
+}
+.header_searchbox{
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+.header_searchbox_input{
+  margin-left: 30px;
+  width: 700px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-color: #eeeeee;
+
+}
+
+.header_searchbox_input input{
+  width: 600px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  /* border: solid 1 #767678; */
+  border-color: #eeeeee;
+  /* border-right: none; */
+  outline: none;
+
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  background-color: #61cdf5;
+  border-radius: 5px;
+  /* border: solid 1 767678; */
+  border-radius: 5px;
+  /* border-left: none; */
+  outline: none;
+}
+.header-call{
+  /* margin: 0 40px; */
+  position:relative;
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+}
+.call-icon{
+  font-size: 37px;
+  position: absolute;
+  top: 12%;
+  left: -40px;
+  color:blue;
+  
+}
+.header_card-content{
+  position: absolute;
+  top:50;
+  right:0;
+  right:166px;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  
+
+}
+.icon-cart{
+  width: 50px;
+  height: 42px;
+  background-color: #61cdf5;
+  margin-right: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
