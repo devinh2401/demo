@@ -4,6 +4,7 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import logo from "../image/logo.jpg"
 import logo2 from "../image/logo2.jpg"
+import Navbar from './Navbar';
 function Homepage() {
   return (
     <div className='container'>
@@ -96,6 +97,7 @@ function Homepage() {
               </div>
              
         </header>
+        <Navbar />
     </div>
   )
 }

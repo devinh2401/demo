@@ -70,6 +70,7 @@ a{
   max-height: 70px;
 }
 .header_searchbox{
+  height: 70px;
   display: flex;
   justify-content: space-between;
   width: 900px;
