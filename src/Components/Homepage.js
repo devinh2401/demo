@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom'
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import logo from "../image/logo.jpg"
-import logo2 from "../image/logo2.jpg"
+import slide from "../image/slide-image.jpg";
+import slide3 from "../image/slide-image3.jpg";
 import Navbar from './Navbar';
+import Slidebaner from './slidebaner';
+import Content from './Content';
 function Homepage() {
   return (
-    <div className='container'>
+    <div className='head-container'>
         <header className='header'> 
             <div className='header_top--panel'>
               <div className='header__top--panel-left'>
@@ -98,6 +101,8 @@ function Homepage() {
              
         </header>
         <Navbar />
+        <Slidebaner />   
+        <Content />
     </div>
   )
 }
