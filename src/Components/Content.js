@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import product from "../image/product.jpg";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Content() {
   return (
     <div className="content mt-1">
@@ -91,11 +91,15 @@ function Content() {
               </div>
             </div>
             <div className="product-action">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
+              <div className="action-left">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
+              <div className="action-right">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
             </div>
           </div>
           <div className="product-item">
@@ -125,11 +129,15 @@ function Content() {
               </div>
             </div>
             <div className="product-action">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
+              <div className="action-left">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
+              <div className="action-right">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
             </div>
           </div>
           <div className="product-item">
@@ -159,11 +167,15 @@ function Content() {
               </div>
             </div>
             <div className="product-action">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
+              <div className="action-left">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
+              <div className="action-right">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
             </div>
           </div>
           <div className="product-item">
@@ -193,11 +205,15 @@ function Content() {
               </div>
             </div>
             <div className="product-action">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
+              <div className="action-left">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
+              <div className="action-right">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+              </div>
             </div>
           </div>
           <div className="product-item">
@@ -227,11 +243,16 @@ function Content() {
               </div>
             </div>
             <div className="product-action">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
+              <div className="action-left">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>               
+                <i className="fa fa-star"></i>               
+              </div>
+              <div className="action-right">
+                <i className="fa fa-star"></i>
+                <i className="fa fa-star"></i>
+                {/* <FontAwesomeIcon icon={['fab', 'google']} /> */}
+              </div>
             </div>
           </div>
         </div>
