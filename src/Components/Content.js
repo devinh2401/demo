@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import product from "../image/product.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaClipboardCheck, FaHeart , FaEye , FaNotEqual, FaCheck, FaTruck, FaCheckCircle} from 'react-icons/fa'
 function Content() {
   return (
     <div className="content mt-1">
@@ -28,6 +28,13 @@ function Content() {
         <div className="product-list">
           <div className="product-item">
             <div className="product-image">
+              <div className="discount-shipping">
+                <span> <FaTruck /></span>
+                <span> Freeship</span>
+              </div>
+              <span className="discount-item">
+                <span className="discount-value"> -30% </span>
+              </span>
               <img className="image-product mt-1" src={product}></img>
             </div>
             <Link to={"#"} className="product-link">
@@ -40,7 +47,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -54,13 +61,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>
@@ -78,7 +85,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -92,13 +99,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>
@@ -116,7 +123,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -130,13 +137,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>
@@ -154,7 +161,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -168,13 +175,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>
@@ -192,7 +199,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -206,13 +213,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>
@@ -230,7 +237,7 @@ function Content() {
               </div>
               <div className="rating">
                 <div className="product-available">
-                  <i className="fa fa-facebook"></i>
+                  <FaCheckCircle  className="fa-check"/>
                   <span> Còn hàng</span>
                 </div>
                 <div className="product-rating">
@@ -244,14 +251,13 @@ function Content() {
             </div>
             <div className="product-action">
               <div className="action-left">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>               
-                <i className="fa fa-star"></i>               
+                <i > <FaCheck /></i>
+                <i ><FaTruck className="order-express"/></i>                          
               </div>
-              <div className="action-right">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                {/* <FontAwesomeIcon icon={['fab', 'google']} /> */}
+                <div className="action-right">
+                <i> <FaHeart /></i>
+                <i> <FaNotEqual /> </i>
+                <i> <FaEye /> </i>
               </div>
             </div>
           </div>

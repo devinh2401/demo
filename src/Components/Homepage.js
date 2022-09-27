@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
+import { FaCartArrowDown, FaHeart, FaHeartBroken, FaNotEqual } from "react-icons/fa";
 import logo from "../image/logo.jpg"
 import slide from "../image/slide-image.jpg";
 import slide3 from "../image/slide-image3.jpg";
@@ -16,50 +17,60 @@ function Homepage() {
               <div className='header__top--panel-left'>
               <ul className="top--panel-list">
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p> Đổi trả</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p> Giao hàng</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p>bảo hành</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p> hỏi đáp</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p>liên hệ</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
+                
+                
+             
               </ul>
               </div>
               <div className='header__top--panel-right'>
               <ul className="top--panel-list">
-                <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+              <li className="top--panel-list-items">
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p> Về chúng tôi</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
                 <li className="top--panel-list-items">
-                    <Link to='/#'>
-                     <AiOutlineUserAdd  />
+                    <Link to='#' className='top--panel-list-icons'>
+                     <AiOutlineUserAdd className='top--panel-list-icon'  />
+                     <p>Nhận xét</p> 
                     </Link>
-                    <p> Đổi trả</p> 
+                    
                 </li>
         
               </ul>
@@ -88,13 +99,18 @@ function Homepage() {
                     <AiOutlineUserAdd  />
                   </div>
                   <div className='icon-cart'>
-                    <AiOutlineUserAdd  />
+                    <FaNotEqual  />
                   </div>
                   <div className='icon-cart'>
-                    <AiOutlineUserAdd  />
+                    <FaHeart   />
                   </div>
                   <div className='icon-cart'>
-                    <AiOutlineUserAdd  />
+                    <span className='icon-cart-item'>
+                      <span className='icon-cart-value'>
+                        3
+                      </span>
+                    </span>
+                    <FaCartArrowDown  />
                   </div>
                 </div>
               </div>
