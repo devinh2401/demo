@@ -5,8 +5,8 @@ import { FiPhone } from "react-icons/fi";
 import "./navbar.css";
 function Navbar() {
   return (
-    <div className="container-nav ">
-      <div className="navbar">
+    <div className="container-nav  ">
+      <div className="navbar container">
         <Link className="navbar-item">
           <AiOutlineUserAdd size={25} />
           <span> TẤT CẢ DANH MỤC</span>

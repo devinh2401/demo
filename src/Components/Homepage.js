@@ -76,8 +76,9 @@ function Homepage() {
               </ul>
               </div>
             </div>
-            <div className='header_content mt-4'>
-                <div className='logo'>
+            <div className='header_content container  '>
+              <div className='header-content-fixed'>
+              <div className='logo'>
                   <img src={logo} alt="logo" />
                 </div>
                 <div className='header_searchbox'>
@@ -88,11 +89,13 @@ function Homepage() {
                       </button>
                 </div>
                 <div className='header-call'>
-                  <FiPhone className='call-icon'/>
-                  <p style={{texDecoration:"underline"}}> 0799.30.8986</p>
-                  <p style={{color:"blue", marginTop:"-16px"}}> YÊU CẦU GỌI LẠI</p>
+                  <FiPhone className='call-icon'  />
+                  <p style={{texDecoration:"underline", fontWeight:"bold", marginLeft:"10px" }}> 0799.30.8986</p>
+                  <p style={{color:"blue", fontWeight:500, marginTop:"-16px"}}> YÊU CẦU GỌI LẠI</p>
 
                 </div>
+              </div>
+                
               </div>
               <div className='header_card-content'>
                   <div className='icon-cart'>

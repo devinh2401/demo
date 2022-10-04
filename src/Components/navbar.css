@@ -3,7 +3,8 @@
     justify-content: center;
     width:1900px;
     height: 50px;
-    background-color:#38495C;
+    /* background-color:#38495C; */
+    background-color:green;
     position: relative;
 }
 .navbar{
@@ -19,3 +20,9 @@
 .navbar-item span{
     font-size: 13px;
 }
+@media  (max-width: 576px) {
+    .container-nav {
+   display: none;
+    }
+    
+  }

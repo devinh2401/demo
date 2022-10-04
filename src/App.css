@@ -10,6 +10,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+.container{
+  width:1600px
+}
 .head-container {
   display: flex;
   flex-direction: column;
@@ -17,6 +20,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 li {
   text-decoration: none;
@@ -77,7 +81,11 @@ a {
   height: 100px;
   display: flex;
   padding: 7px 0px;
-
+  margin-top: 15px;
+}
+.header-content-fixed{
+  display: flex;
+  width: 100%;
 }
 .logo {
   width: 270px;
@@ -135,7 +143,7 @@ a {
   position: absolute;
   top: 12%;
   left: -40px;
-  color: blue;
+  color: gray;
 }
 .header_card-content {
   position: absolute;
@@ -193,6 +201,24 @@ a {
   /* position: relative; */
   width: 1900px;
   height: 558px;
+
+}
+.slide-banner-content img{
+  width:"1900px"; 
+  height:"558px"
+}
+@media(max-width: 576px){
+  .slide-banner{
+    width: 576px;
+    height: auto;
+  }
+  .slide-banner_content img{
+   width: 576px;
+  height: auto;
+  object-fit: center;
+    
+    
+  }
 }
 .slide-banner-content {
 }
@@ -477,4 +503,71 @@ a {
 .action-left i:last-child:hover{
   background-color:#61cdf5
   
+}
+/* responsive mobile */
+@media  (max-width:576px) {
+  .container{
+    width: 100%;
+    margin: 5px 5px;
+  }
+  .header_top--panel{
+    display: none;
+  }
+ 
+  .logo{
+    width: 70%;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+  }
+  .logo img{
+    width: 200px;
+    height: 180px;
+  }
+  
+  .header_searchbox_input{
+    display: none;
+  }
+  .header-content-fixed{
+    position: fixed;
+    top: -20px;
+    left: 0;
+  }
+  .header-call{
+    width: 35%;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    /* overflow: hidden; */
+    /* border-bottom-width: 0em; */
+    /* border: #333 1px solid; */
+  }
+  .call-icon{
+    margin-left: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+  }
+  .header_card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5f5f5;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    bottom: -170px;
+    z-index: 9999;
+  }
+  .icon-cart{
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+    border-color: #61cdf5;
+    color: #61cdf5;
+    padding: 3px;
+    
+  }
 }
