@@ -9,7 +9,14 @@ body {
   color: #333;
   font-size: 16px;
   line-height: 1.5;
+  /* overflow: hidden; */
+  overflow-x: hidden;
 }
+/* .container-16{
+  width:1600px;
+  display: flex;
+  justify-content: center;
+} */
 .head-container {
   display: flex;
   flex-direction: column;
@@ -17,6 +24,8 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  /* background-color: #661717; */
 }
 li {
   text-decoration: none;
@@ -25,16 +34,32 @@ li {
 a {
   text-decoration: none;
 }
-.containerwrap{
+/* .containerwrap{
   max-width: 947px;
   margin:5px;
   padding: 5px;
+} */
+.header-wrap{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-color:#F5f5f5;
+  /* overflow-x: hidden; */
+  /* position: fixed; */
+  /* top: 0; */
 }
 .header {
   width: 1600px;
   height: 150px;
-  background-color: #ffff;
+  /* overflow-x: hidden; */
+  /* background-color: rgb(47, 44, 199); */
   box-sizing: border-box;
+  /* overflow: hidden;
+  position: fixed;
+  top: 0; */
+  /* left: 0; */
+  /* position: absolute; */
 }
 .header_top--panel {
   display: flex;
@@ -82,7 +107,11 @@ a {
   height: 100px;
   display: flex;
   padding: 7px 0px;
-
+  margin-top: 15px;
+}
+.header-content-fixed{
+  display: flex;
+  width: 100%;
 }
 .logo {
   width: 270px;
@@ -140,7 +169,7 @@ a {
   position: absolute;
   top: 12%;
   left: -40px;
-  color: blue;
+  color: gray;
 }
 .header_card-content {
   position: absolute;
@@ -195,20 +224,43 @@ a {
 }
 /* Slide baner */
 .slide-banner {
-  /* position: relative; */
   width: 1900px;
   height: 558px;
+  
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* z-index: -1; */
+
+}
+.slide-banner-content img{
+  width:"1900px"; 
+  height:"558px"
+}
+@media(max-width: 576px){
+  .slide-banner{
+    width: 576px;
+    height: auto;
+  }
+  .slide-banner_content img{
+   width: 576px;
+  height: auto;
+  object-fit: center;
+    
+    
+  }
 }
 .slide-banner-content {
 }
 /* css content */
 .content {
+  position: relative;
   width: 1900px;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 .content-title {
+  display: absolute;
   width: 100%;
   height: 50px;
   background-color: #f5f5f5;
@@ -483,8 +535,132 @@ a {
   background-color:#61cdf5
   
 }
-@media screen and (max-width: 768px) {
+.advertise-wrap{
+  width: 100%;
+  height: 500px;;
+  background: url(./image/background.jpg) center left fixed #000000;
+  /* overflow-x:visible; */
+  /* filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* opacity: .9; */
+  /* text-align: center; */
+  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+  
+  /* background-color:#000000;
+  background-position: 100% 50%; */
+}
+.advertise{
+  width: 100%;
+  width: 1600px;
+
+}
+.advertise-title{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0 ;
+  /* display: block; */
+}
+.advertise-title p{
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+.advertise-list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.advertise-item{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(238, 232, 232);
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* @media screen and (max-width: 768px) {
   .header_top--panel{
     display: none;
+  }
+} */
+/* responsive mobile */
+@media  (max-width:576px) {
+  .container{
+    width: 100%;
+    margin: 5px 5px;
+  }
+  header{
+    overflow: hidden;
+
+  }
+
+  .header_top--panel{
+    display: none;
+  }
+ 
+  .logo{
+    width: 70%;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+  }
+  .logo img{
+    width: 200px;
+    height: 180px;
+  }
+  
+  .header_searchbox_input{
+    display: none;
+  }
+  .header-content-fixed{
+    position: fixed;
+    top: -20px;
+    left: 0;
+  }
+  .header-call{
+    width: 35%;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+
+  }
+  .call-icon{
+    margin-left: 10px;
+    font-size: 35px;
+    transform: rotate(45deg);
+  }
+  .header_card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5f5f5;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    bottom: -170px;
+  }
+  .icon-cart{
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+    border-color: #61cdf5;
+    color: #61cdf5;
+    padding: 3px;
+    
   }
 }

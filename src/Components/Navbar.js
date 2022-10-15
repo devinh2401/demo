@@ -4,9 +4,14 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 import "./navbar.css";
 function Navbar() {
+  // const nav = document.getElementByClassName('container-nav');
+  let navScroll = window.scrollY
+  window.addEventListener('scroll',() =>{
+    console.log(navScroll)
+  })
   return (
-    <div className="container-nav ">
-      <div className="navbar">
+    <div className="container-nav">
+      <div className="navbar container">
         <Link className="navbar-item">
           <AiOutlineUserAdd size={25} />
           <span> TẤT CẢ DANH MỤC</span>
@@ -43,5 +48,4 @@ function Navbar() {
     </div>
   );
 }
-
 export default Navbar;
