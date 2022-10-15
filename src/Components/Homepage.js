@@ -11,10 +11,10 @@ import Slidebaner from './slidebaner';
 import Content from './Content';
 function Homepage() {
   return (
-    <div className='head-container'>
+    <div className='head-container '>
         <header className='header'> 
             <div className='header_top--panel'>
-              <div className='header__top--panel-left'>
+              <div className='header__top--panel-left '>
               <ul className="top--panel-list">
                 <li className="top--panel-list-items">
                     <Link to='#' className='top--panel-list-icons'>

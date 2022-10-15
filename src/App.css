@@ -25,6 +25,11 @@ li {
 a {
   text-decoration: none;
 }
+.containerwrap{
+  max-width: 947px;
+  margin:5px;
+  padding: 5px;
+}
 .header {
   width: 1600px;
   height: 150px;
@@ -477,4 +482,9 @@ a {
 .action-left i:last-child:hover{
   background-color:#61cdf5
   
+}
+@media screen and (max-width: 768px) {
+  .header_top--panel{
+    display: none;
+  }
 }
