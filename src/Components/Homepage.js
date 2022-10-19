@@ -12,9 +12,9 @@ import Content from './Content';
 import Footer from './Footer';
 function Homepage() {
   return (
-    <div className='head-container '>
+    <div className='main-container '>
       <div className='header-wrap '>
-        <header className='header'> 
+        <header> 
             <div className='header_top--panel'>
               <div className='header__top--panel-left '>
               <ul className="top--panel-list">
@@ -78,7 +78,7 @@ function Homepage() {
               </ul>
               </div>
             </div>
-            <div className='header_content container  '>
+            <div className='header_content'>
               <div className='header-content-fixed'>
               <div className='logo'>
                   <img src={logo} alt="logo" />
